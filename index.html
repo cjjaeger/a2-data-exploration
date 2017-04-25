@@ -23,8 +23,14 @@
 
 <body class="container">
 
-
-    <h1>Assignment 2</h1>
+    <header class="jumbotron">
+        <h1>Assignment 2</h1>
+    </header>
+    <p>
+        This visualization shows (from a sample of 69 users) the frequency with which they
+        aggregately either follow other blogs, like, or comment on someones post on an hourly basis.
+    </p>
+    <h2>Choose which user data to show:</h2>
      <div class="btn-group" data-toggle="buttons">
           <label class="btn btn-primary">
 		    <input value = "follow" type="radio"  class="type" name="options" id="option1" autocomplete="off" >Follows
@@ -32,8 +38,41 @@
           <label class="btn btn-primary active">
 		    <input value = "like" type="radio"  class="type" name="options" id="option2" autocomplete="off" checked>Likes
 		  </label>
+          <label class="btn btn-primary ">
+           <input value = "comment" type="radio"  class="type" name="options" id="option3" autocomplete="off" >Comments
+         </label>
      </div>
     <div id="vis"></div>
+    <div class="container">
+        <h2>Justification</h2>
+        <p>
+            I chose this data set because I thought it would be interesting to observe
+            users' behavior overtime when following of like social media sources. This
+            specific data set is only blog data and from that only a sample of 69 users.
+            I would have liked to get a bigger sample or one from a more prevelent social
+            media platform, but I couldn't find one.
+        </p>
+        <p>
+            The first encoding I want to talk about was the color because I had no other
+            intention for it than to make the visualization pleasant to look at. The visualization
+            has a timescale for the x axis (because points needed to be plotted in time)and a
+            linear one for the y. I chose to use a scatterplot so that users could easily see where
+            the different points were. I made them opaque so that it would be apparent when the
+            points were overlapping. I also include hover behavior on the points to users could
+            see the exact data for any point. I made a line as well because I at times the plots are very
+            close together so the lines helped to show the relationship/slope between points easier
+            to see.
+        </p>
+        <p>
+            I had two different types of controling elements. The first was buttons.
+            The input buttons allowed the user to see either the following or liking
+            behavior of other users over the course of about a week. They might even
+            be able to tell the bahavior over a certain day but it would be kind of difficult
+            since the data points are bunched together. This is where the date slider comes in
+            handy. The date slider allows the user to see a more specific range of data so they
+            can observe user behaviors more clearly on specifc days or time range.
+        </p>
+    </div>
 </body>
 
 </html>
