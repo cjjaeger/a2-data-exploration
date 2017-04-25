@@ -158,7 +158,7 @@ var data = filterData();
        .style("stroke-width", "2px")
        .attr("d", valueline(data));
     //  Add the valueline path.
-    
+
 
       $("circle").tooltip({
                'container': 'body',
